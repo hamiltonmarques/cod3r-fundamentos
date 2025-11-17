@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Herança</title>
+
+    <!-- CSS aqui!!! -->
+    <style>
+        body {
+            border: solid 3px red;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: white;
+        }
+
+        /* É possível herdar a propriedade de outro elemento pai.
+        Quando não declarado, ele usa a propriedade definida como padrão pelo CSS.
+        Precisamos saber o que cada elemento aplica em suas propriedades como herança.
+        A ideia é passagem de estilo de pai para filho. */
+        div {
+            /* Estamos indicando de forma explícita, pois nesse caso, o body não passa a borda por padrão a todos os seus elementos filhos (somente na parte externa da página).
+            Esse é um caso particular em que a propriedade não é passada como herança para todos os elementos (por isso destaquei acima que precisamos conhecer o comportamento para cada elemento) */
+            border: inherit;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- p, h1 e div estão dentro do body, ou seja, eles vão herdar as propriedades de estilo do body. -->
+    <p>
+        <a href="./00_exercicios.html" style="color: white;">Voltar</a>
+    </p>
+
+    <h1>Herança</h1>
+    
+    <div>Conteúdo da Página</div>
+</body>
+
+</html>

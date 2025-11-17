@@ -1,0 +1,55 @@
+<!-- Margin Collapse -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Margin Collapse</title>
+
+    <!-- CSS aqui!!! -->
+    <style>
+        body {
+            color: white;
+        }
+
+        .azul {
+            background-color: dodgerblue;
+        }
+
+        .vermelho {
+            background-color: crimson;
+        }
+
+        .verde {
+            background-color: green;
+        }
+
+        /* A vírgula funciona como se fosse um OU lógico, ou seja, aplica para um ou para outro (compartilha o estilo). */
+        div, span {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+        <a href="./00_exercicios.html">Voltar</a>
+    </p>
+
+    <!-- Elementos Inline -->
+    <!-- Colocando um span ao lado do outro remove o espaço entre eles (solução paliativa apenas, não é a melhor).
+    Aqui não houve Margin Collapse, pois são elementos na mesma linha. Verificar no inspector que não tem margem superior e inferior, mas tem nas laterais e também tem um espaço em branco entre os elementos. -->
+    <span class="azul">1</span><span class="vermelho">2</span><span class="verde">3</span>
+
+    <hr>
+
+    <!-- Aqui ocorre o Margin Collapse, ou seja, as margens superior e inferior foram combinadas (ficou o mesmo tamanho).
+    A combinação das margens sempre ocorrerá no eixo vertical (superior e inferior). -->
+    <div class="azul">1</div>
+    <div class="vermelho">2</div>
+    <div class="verde">3</div>
+
+</body>
+
+</html>

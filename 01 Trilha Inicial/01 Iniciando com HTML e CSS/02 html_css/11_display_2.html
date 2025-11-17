@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>02 Propriedade Display</title>
+
+    <!-- CSS aqui!!! -->
+    <style>
+        body {
+            color: white;
+        }
+
+        div {
+            /* Solução mais elegante para tirar aquele espaço em branco que ficava entre os spans. */
+            display: flex;
+        }
+
+        span {
+            display: inline;
+            background-color: dodgerblue;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+        <a href="./00_exercicios.html">Voltar</a>
+    </p>
+
+    <div>
+        <!-- O span deve estar dentro da div pra funcionar o display flex! -->
+        <span>01 SPAN</span>
+        <span>02 SPAN</span>
+    </div>
+
+</body>
+
+</html>

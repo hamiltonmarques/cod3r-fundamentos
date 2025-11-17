@@ -1,0 +1,13 @@
+body {
+    background-color: beige;
+}
+
+.par {
+    font-weight: bold;
+    color: chocolate;
+    background-color: antiquewhite;
+}
+
+.destaque {
+    font-size: 22px;
+}

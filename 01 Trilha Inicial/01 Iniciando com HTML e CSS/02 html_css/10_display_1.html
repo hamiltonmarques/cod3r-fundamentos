@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>01 Propriedade Display</title>
+
+    <!-- CSS aqui!!! -->
+    <style>
+        body {
+            color: white;
+        }
+
+        div {
+            /* display block (default da div) significa que vai ocupar o espaço inteiro disponível de tela disponível até quebrar a linha */
+            display: block;
+            background-color: crimson;            
+        }
+
+        /* Para resolver o "bug" que ocorre, deve-se usar o display: inline-block, que considera os eixos vertical (que estava sendo ignorado) e horizontal juntos, mantendo-os na mesma linha (inline). */
+        span {
+            /* display inline (default do span) significa que ela vai ocupar SOMENTE o espaço necessário para exibir o elemento */
+            display: inline;
+            background-color: dodgerblue;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>
+        <a href="./00_exercicios.html">Voltar</a>
+    </p>
+
+
+    <div>01 DIV</div>
+    <div>02 DIV</div>
+
+    <span>01 SPAN</span>
+    <span>02 SPAN</span>
+</body>
+
+</html>

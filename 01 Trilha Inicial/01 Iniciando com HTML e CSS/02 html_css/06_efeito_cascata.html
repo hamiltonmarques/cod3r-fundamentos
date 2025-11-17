@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efeito Cascata</title>
+    <style>
+        /* O efeito cascata se refere a especificidade (ou precedência) que cada tipo seletor tem.
+        Se colocarmos o mouse em cima do seletor, o VS Code mostra a especificidade dele.
+        Quanto mais para a esquerda o 1, maior o efeito cascata, ou seja, o estilo dele será aplicado em prioridade aos demais.
+        Caso tenha um mesmo estilo em 2 ou mais seletores (ex. mesmo color), o CSS vai considerar o seletor de maior prioridade. */
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+            color: white;
+        }
+
+        .maior {
+            /* será considerado esses valores, pois o seletor tem maior prioridade. Esse seria o efeito cascata do CSS. */
+            height: 150px; 
+            width: 150px;
+        }
+
+        #area2 {
+            font-weight: bold;
+            font-family: monospace;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="./00_exercicios.html">Voltar</a>
+    </p>
+    <!-- CSS Inline tem maior precedência ainda! -->
+    <div class="maior" style="color: yellow;">Área 01</div> 
+    <div id="area2">Área 02</div>
+
+</body>
+
+</html>
